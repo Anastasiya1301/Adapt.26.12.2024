@@ -26,6 +26,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.auth-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -47,4 +53,51 @@ body {
   .container {
     width: 1200px;
   }
+}
+
+.auth-list {
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+}
+.auth-list .auth-item:last-child {
+  border: 2px solid #fff;
+  border-radius: 17px;
+  padding: 11px 5px;
+}
+.auth-list .auth-item .auth-link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+.header {
+  background-image: url("../image/header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 552px;
+  max-width: 480px;
+  width: 320px;
+  padding-top: 19px;
+  padding-bottom: 138px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url("../image/tablet-header.png");
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    background-image: url("../image/desk-header.png");
+    max-width: 1200px;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

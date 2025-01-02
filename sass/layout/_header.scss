@@ -1,0 +1,21 @@
+.header{
+    background-image: url("../image/header-mobile.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 552px;
+    max-width: 480px;
+    width: 320px;
+    // margin: 0 auto;
+    // @extend %center-block;
+    padding-top: 19px;
+    padding-bottom: 138px;
+    @media screen and (min-width:768px){
+        background-image: url("../image/tablet-header.png");
+        max-width: 768px;
+    }
+    @media screen and (min-width:1200px){
+        background-image: url("../image/desk-header.png");
+        max-width: 1200px;
+    }
+}

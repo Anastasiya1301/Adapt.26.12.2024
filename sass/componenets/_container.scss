@@ -17,3 +17,27 @@
 
     }
 }
+.auth-list{
+    @extend %flex; 
+    column-gap: 9px;
+    .auth-item{
+        &:last-child{
+            border: 2px solid #fff;
+            border-radius: 17px;
+            padding: 11px 5px;
+        }
+        .auth-link{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 13px;
+        text-align: center;
+        color: #fff;
+    }
+    // .auth-link:last-child{
+    //     border: 2px solid #fff;
+    //     border-radius: 17px;
+    // }
+
+    }
+    
+}
