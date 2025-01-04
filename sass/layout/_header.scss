@@ -1,21 +1,41 @@
-.header{
-    background-image: url("../image/header-mobile.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 552px;
+.header {
     max-width: 480px;
-    width: 320px;
-    // margin: 0 auto;
-    // @extend %center-block;
+    margin: 0 auto;
     padding-top: 19px;
     padding-bottom: 138px;
-    @media screen and (min-width:768px){
+    background-image: url("../image/header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 552px;
+    // @extend %center-block;
+    @media screen and (min-width: 768px) {
         background-image: url("../image/tablet-header.png");
         max-width: 768px;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width: 1200px) {
         background-image: url("../image/desk-header.png");
         max-width: 1200px;
+    }
+}
+.auth-list {
+    @extend %flex;
+    column-gap: 9px;
+    .auth-item {
+        &:last-child {
+            border: 2px solid $border-header-btn;
+            border-radius: 17px;
+            padding: 8px 3px;
+            width: 90px;
+            height: 36px;
+            text-align: center;
+        }
+    }
+    .auth-link {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 13px;
+        text-align: center;
+        color: $primary-text-color;
     }
 }
