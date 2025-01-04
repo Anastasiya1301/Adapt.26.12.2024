@@ -1,0 +1,39 @@
+.section{
+    padding-top: 67px;
+    padding-bottom: 56px;
+    @media screen  and (min-width:768px) {
+        padding-top:71px;
+        padding-bottom:39px;
+    }
+    @media screen  and (min-width:1200px) {
+        padding-top: 69px;
+        padding-bottom: 72px;
+    }
+    .section-title {
+font-size: 22px;
+text-align: center;
+color: $secondary-text-color;
+width: 288px;
+margin-bottom: 14px;
+margin-left: auto;
+    margin-right: auto;
+@media screen and (min-width: 768px) {
+    width: 431px;
+    margin-bottom: 30px;
+}
+    }
+    .partners-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            row-gap: 57px;
+            column-gap: 53px;
+        }
+        .partners-item {
+            
+        }
+    }
+}
