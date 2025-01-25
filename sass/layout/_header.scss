@@ -8,15 +8,30 @@
     background-size: cover;
     background-position: center;
     height: 552px;
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution: 2dpx){
+        background-image: url("../image/bg-mobile.png");
+    }
     // @extend %center-block;
     @media screen and (min-width: 768px) {
         background-image: url("../image/tablet-header.png");
         max-width: 768px;
         height: 700px;
     }
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution: 2dpx){
+        background-image: url("../image/bg-tablet.png");
+    }
     @media screen and (min-width: 1200px) {
         background-image: url("../image/desk-header.png");
         max-width: 1200px;
+    }
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution: 2dpx){
+        background-image: url("../image/bg-tablet.png");
     }
     .nav{
     display: flex;

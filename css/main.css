@@ -87,6 +87,11 @@ body {
   background-position: center;
   height: 552px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dpx) {
+  .header {
+    background-image: url("../image/bg-mobile.png");
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     background-image: url("../image/tablet-header.png");
@@ -94,10 +99,20 @@ body {
     height: 700px;
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dpx) {
+  .header {
+    background-image: url("../image/bg-tablet.png");
+  }
+}
 @media screen and (min-width: 1200px) {
   .header {
     background-image: url("../image/desk-header.png");
     max-width: 1200px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dpx) {
+  .header {
+    background-image: url("../image/bg-tablet.png");
   }
 }
 .header .nav {
